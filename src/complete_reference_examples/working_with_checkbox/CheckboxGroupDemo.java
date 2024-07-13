@@ -28,7 +28,7 @@ public class CheckboxGroupDemo extends Frame {
 	public CheckboxGroupDemo(String title) throws HeadlessException {
 		super(title);
 
-		setLayout(new FlowLayout());
+		setLayout(new FlowLayout(FlowLayout.RIGHT));
 		setFont(new Font("Segoe UI", Font.BOLD, 14));
 
 		checkboxGroup_1 = new CheckboxGroup();
@@ -93,7 +93,7 @@ public class CheckboxGroupDemo extends Frame {
 		public void actionPerformed(ActionEvent e) {
 			Checkbox selectedCheckbox;
 			if ((selectedCheckbox = checkboxGroup_1.getSelectedCheckbox()) == null) {
-				message = "Options not selected yet";
+				message = "Option is not selected yet";
 			} else {
 				message = "You've selected: " + selectedCheckbox.getLabel();
 			}
