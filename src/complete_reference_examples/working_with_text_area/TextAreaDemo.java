@@ -45,7 +45,7 @@ public class TextAreaDemo extends Frame {
 		setFont(new Font("Segoe UI", Font.BOLD, 14));
 		setLayout(new FlowLayout());
 		setVisible(true);
-		setSize(new Dimension(800, 500));
+		setSize(new Dimension(800, 250));
 	}
 
 	private class WindowCloser extends WindowAdapter {
