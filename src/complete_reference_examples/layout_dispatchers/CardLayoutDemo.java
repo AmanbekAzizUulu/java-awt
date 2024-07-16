@@ -17,22 +17,22 @@ import java.awt.event.WindowEvent;
 
 public class CardLayoutDemo extends Frame {
 
-	private Checkbox checkbox_windows_10;
-	private Checkbox checkbox_windows_8;
-	private Checkbox checkbox_windows_7;
+	private final Checkbox checkbox_windows_10;
+	private final Checkbox checkbox_windows_8;
+	private final Checkbox checkbox_windows_7;
 
-	private Checkbox checkbox_mac;
-	private Checkbox checkbox_android;
-	private Checkbox checkbox_linux;
+	private final Checkbox checkbox_mac;
+	private final Checkbox checkbox_android;
+	private final Checkbox checkbox_linux;
 
-	private Panel deck_operating_system;
-	private Panel deck_versions_of_windows;
-	private Panel deck_not_windows_os;
+	private final Panel deck_operating_system;
+	private final Panel deck_versions_of_windows;
+	private final Panel deck_not_windows_os;
 
-	private CardLayout layout_card;
+	private final CardLayout layout_card;
 
-	private Button button_windows;
-	private Button button_other;
+	private final Button button_windows;
+	private final Button button_other;
 
 	public CardLayoutDemo(String title) {
 		super(title);
