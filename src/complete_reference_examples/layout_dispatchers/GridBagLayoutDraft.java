@@ -9,7 +9,7 @@ import java.awt.Insets;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-// class where I tried to learn Java AWT in practice
+// class where I tried to learn GridBagLayout in practice
 public class GridBagLayoutDraft extends Frame {
 	private GridBagConstraints constraints_grid_bag = new GridBagConstraints();
 	private Button button_1;

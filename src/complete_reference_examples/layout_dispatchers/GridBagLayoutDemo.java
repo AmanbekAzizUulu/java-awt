@@ -46,31 +46,31 @@ public class GridBagLayoutDemo extends Frame {
 		checkbox_mac_os.addItemListener(new ItemStateChanged());
 
 		// Set layout constraints for checkbox_windows
-		constraints.weightx = 1.0; // Distribute extra horizontal space
-		constraints.weighty = 0.0; // No extra vertical space
-		constraints.ipadx = 200; // Internal padding
-		constraints.insets = new Insets(0, 6, 0, 0); // External padding
-		constraints.anchor = GridBagConstraints.NORTHWEST; // Anchor to the top-left
-		constraints.gridwidth = GridBagConstraints.RELATIVE; // End of row
+		constraints.weightx = 1.0; 																	// Distribute extra horizontal space
+		constraints.weighty = 0.0; 																	// No extra vertical space
+		constraints.ipadx = 100; 																	// Internal padding
+		constraints.insets = new Insets(0, 6, 0, 0); 							// External padding
+		constraints.anchor = GridBagConstraints.NORTHWEST; 											// Anchor to the top-left
+		constraints.gridwidth = GridBagConstraints.RELATIVE; 										// End of row
 		layout_grid_bag_layout.setConstraints(checkbox_windows, constraints);
-
-		// Set layout constraints for checkbox_android
-		constraints.weightx = 1.0;
-		constraints.weighty = 0.0;
-		constraints.ipadx = 100;
-		constraints.insets = new Insets(0, 0, 0, 0); // Reset external padding
-		constraints.anchor = GridBagConstraints.NORTHWEST;
-		constraints.gridwidth = GridBagConstraints.REMAINDER; // End of row
-		layout_grid_bag_layout.setConstraints(checkbox_android, constraints);
 
 		// Set layout constraints for checkbox_linux
 		constraints.weightx = 1.0;
-		constraints.weighty = 1.0; // Distribute extra vertical space
+		constraints.weighty = 1.0; 																	// Distribute extra vertical space
 		constraints.ipadx = 100;
 		constraints.insets = new Insets(0, 6, 0, 0);
 		constraints.anchor = GridBagConstraints.NORTHWEST;
 		constraints.gridwidth = GridBagConstraints.RELATIVE;
 		layout_grid_bag_layout.setConstraints(checkbox_linux, constraints);
+
+		// Set layout constraints for checkbox_android
+		constraints.weightx = 1.0;
+		constraints.weighty = 0.0;
+		constraints.ipadx = 0;
+		constraints.insets = new Insets(0, 0, 0, 0); 							// Reset external padding
+		constraints.anchor = GridBagConstraints.NORTHWEST;
+		constraints.gridwidth = GridBagConstraints.REMAINDER; 										// End of row
+		layout_grid_bag_layout.setConstraints(checkbox_android, constraints);
 
 		// Set layout constraints for checkbox_mac_os
 		constraints.weightx = 1.0;
@@ -99,18 +99,18 @@ public class GridBagLayoutDemo extends Frame {
 	private class WindowCloser extends WindowAdapter {
 		@Override
 		public void windowClosing(WindowEvent e) {
-			System.exit(0); // Exit the application when the window is closed
+			System.exit(0); 																	// Exit the application when the window is closed
 		}
 	}
 
 	public static void main(String[] args) {
-		new GridBagLayoutDemo("GridBag layout demo"); // Create and display the frame
+		new GridBagLayoutDemo("GridBag layout demo"); 										// Create and display the frame
 	}
 
 	@Override
 	public void paint(Graphics g) {
 		// Draw the current state of checkboxes
-		message = "*** Current state ***";
+		message = "Current state";
 		g.drawString(message, 20, 100);
 
 		message = "Windows:" + " ".repeat(13) + checkbox_windows.getState();
@@ -129,7 +129,7 @@ public class GridBagLayoutDemo extends Frame {
 	private class ItemStateChanged implements ItemListener {
 		@Override
 		public void itemStateChanged(ItemEvent e) {
-			repaint(); // Repaint the frame when a checkbox state changes
+			repaint(); 																				// Repaint the frame when a checkbox state changes
 		}
 	}
 }
