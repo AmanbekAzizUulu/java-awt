@@ -104,7 +104,7 @@ public class GridBagLayoutDemo extends Frame {
 	}
 
 	public static void main(String[] args) {
-		new GridBagLayoutDemo("GridBag layout demo"); 										// Create and display the frame
+		new GridBagLayoutDemo("GridBagLayout Demo"); 										// Create and display the frame
 	}
 
 	@Override

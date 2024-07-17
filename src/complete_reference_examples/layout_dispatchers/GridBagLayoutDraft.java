@@ -17,7 +17,7 @@ public class GridBagLayoutDraft extends Frame {
 	private Button button_3;
 	private Button button_4;
 	private Button button_5;
-	private Button button_6;
+	// private Button button_6;
 	private Button button_7;
 
 	public GridBagLayoutDraft(String title) {
@@ -29,7 +29,7 @@ public class GridBagLayoutDraft extends Frame {
 		button_3 = new Button("BUTTON_3");
 		button_4 = new Button("BUTTON_4");
 		button_5 = new Button("BUTTON_5");
-		button_6 = new Button("BUTTON_6");
+		// button_6 = new Button("BUTTON_6");
 		button_7 = new Button("BUTTON_7");
 		constraints_grid_bag.insets = new Insets(5, 5, 5, 5);
 
@@ -58,7 +58,6 @@ public class GridBagLayoutDraft extends Frame {
 		// constraints_grid_bag.gridx = 2;
 		// constraints_grid_bag.gridy = 1;
 		// add(button_6, constraints_grid_bag);
-
 
 		constraints_grid_bag.gridx = 0;
 		constraints_grid_bag.gridy = 2;
